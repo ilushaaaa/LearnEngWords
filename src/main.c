@@ -1,3 +1,4 @@
+#include "howstring.h"
 #include <locale.h>
 #include <stdio.h>
 int main()
@@ -5,7 +6,8 @@ int main()
     setlocale(LC_ALL, "Russian");
     FILE* fEng = fopen("EngWords.txt", "r");
     FILE* fRus = fopen("RusWords.txt", "r");
-    s rewind(fEng);
+    printf("%d", howstring(fEng));
+    rewind(fEng);
     rewind(fRus);
     fclose(fEng);
     fclose(fRus);
