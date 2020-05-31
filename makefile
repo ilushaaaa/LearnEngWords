@@ -12,4 +12,4 @@ build/src/howstring.o: src/howstring.c
 	gcc -Wall -Werror -c src/howstring.c -o build/src/howstring.o
 
 build/src/howsymbols.o: src/howsymbols.c
-	gcc -Wall -Werror src/howsymbols.c -o build/src/howsymbols.o
+	gcc -Wall -Werror -c src/howsymbols.c -o build/src/howsymbols.o
